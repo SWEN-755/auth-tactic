@@ -1,6 +1,8 @@
-# Authentication and Authorization Tactice
+# Authentication and Authorization Tactics
 
 ## System Overview
+
+This application is a minimal prototype demonstrating the Authentication and Authorization security tactics using the Java Authentication and Authorization Service (JAAS). 
 
 ### Tactic Design
 
