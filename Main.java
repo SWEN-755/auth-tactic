@@ -78,9 +78,9 @@ public class Main {
 
             // --- STEP 3.b. AUTHORIZATION CHECKS FOR REGULAR USER ---
             System.out.println("\n--- AUTHORIZATION CHECK AS REGULAR USER ---");
-            accessService(adminSubject, "/admin/system/shutdown"); //denied
-            accessService(adminSubject, "/view/public/data"); //granted
-            accessService(adminSubject, "/api/secret/key"); //denied
+            accessService(userSubject, "/admin/system/shutdown"); //denied
+            accessService(userSubject, "/view/public/data"); //granted
+            accessService(userSubject, "/api/secret/key"); //denied
             lc.logout();
         } catch (LoginException e) {
             System.err.println("USER LOGIN FAILED: " + e.getMessage());
