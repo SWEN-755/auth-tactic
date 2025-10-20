@@ -12,6 +12,8 @@ The system implements two main security tactics:
 
 2. **Authorization**: The Authorization tactic determines what an authenticated user is permitted to do based on their assigned role. The Authorization tactic is established across two distinct phases. Curing the login's commit phase in LoginAuthentication, role hierarchy is enforced. Then in Main, the system maintains a Policy Map linking service URLs to their single required role. The final authorization check is performed by the isAuthorized method, which checks if the authenticated user's Subject (the set of roles granted during login) contains the exact role specified by the service's URL.
 
+Note: Refer UML diagram in document attached with submission.
+
 ## Running the App Locally
 
 1. **Step 1:** Compile the files in directory root
@@ -26,8 +28,8 @@ java Main
 
 ## Libraries and Frameworks Used
 
-**`java.util`** - Used for data structures such as HashMap, HashSet, Map, and Set.
-
-**`java.security`** - Provides authentication and login capabilities, configuration with the JAAS Framework, and interface for a Principal entity which can be authenticated by a computer or network.
-
-**`JAAS Framework`** - Provides a plug-and-play implementation for authentication and authorization.
+| Package/Framework | Description |
+| :--- | :--- |
+| `java.util` | Used for data structures such as HashMap, HashSet, Map, and Set. |
+| `java.security`| Provides authentication and login capabilities, configuration with the JAAS Framework, and interface for a Principal entity which can be authenticated by a computer or network. |
+| `JAAS Framework`| Provides a plug-and-play implementation for authentication and authorization. |
