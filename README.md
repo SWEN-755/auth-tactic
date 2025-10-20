@@ -17,3 +17,19 @@ javac *.java
 ```
 java Main
 ```
+
+## Libraries and Frameworks Used
+```
+java.util
+```
+Used for data structures such as HashMap, HashSet, Map, and Set.
+```
+java.security
+```
+Provides authentication and login capabilities.
+Provides configuration with the JAAS Framework.
+Provides interface for a Principal entity which can be authenticated by a computer or network.
+```
+JAAS Framework
+```
+Provides a plug-and-play implementation for authentication and authorization.
